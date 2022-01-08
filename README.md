@@ -35,3 +35,9 @@
 
 ### Testing Application
 * curl -X GET 'http://localhost:8081/rest/mscovid/test?msg=testing'
+
+### Sonar Execution
+mvn sonar:sonar \
+  -Dsonar.projectKey=ejemplo-maven \
+  -Dsonar.host.url=http://localhost:9000 \
+  -Dsonar.login=7e9fd29befa42ec554d1fed3327215be2a49befc
