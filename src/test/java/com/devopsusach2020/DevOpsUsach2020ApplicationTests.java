@@ -11,6 +11,6 @@ class DevOpsUsach2020ApplicationTests {
 	}
 	
 	@Test
-	void contextLoads() {
+	void contextLoads2() {
 	}
 }
