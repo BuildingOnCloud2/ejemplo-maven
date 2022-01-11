@@ -10,7 +10,6 @@ class DevOpsUsach2020ApplicationTests {
 	void contextLoads() {
 	}
 	
-	@Test
 	void contextLoads2() {
 	}
 }
