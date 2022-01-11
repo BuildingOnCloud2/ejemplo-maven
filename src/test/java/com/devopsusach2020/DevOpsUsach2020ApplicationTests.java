@@ -8,8 +8,10 @@ class DevOpsUsach2020ApplicationTests {
 
 	@Test
 	void contextLoads() {
+		Systen.out.println("hola mundo");
 	}
 	
 	void contextLoads2() {
+		Systen.out.println("hola mundo por segunda vez");
 	}
 }
