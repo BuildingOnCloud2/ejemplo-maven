@@ -11,7 +11,7 @@ pipeline {
                 }
             }
         }
-        stage('Sonar Checks') {
+        stage('Sonar') {
             steps {
                 script {
                     dir ('/Users/jaruizf/repos/ejemplo-maven'){
