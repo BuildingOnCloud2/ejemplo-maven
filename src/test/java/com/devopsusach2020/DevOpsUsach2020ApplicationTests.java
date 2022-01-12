@@ -8,10 +8,20 @@ class DevOpsUsach2020ApplicationTests {
 
 	@Test
 	void contextLoads() {
-		System.out.println("hola mundo");
-	}
-	
+    int a = 1;
+    int b = 2;
+
+    int result = a + b;
+
+    Assert.assertEquals(3, result);
+  }
+  @Test	
 	void contextLoads2() {
-		System.out.println("hola mundo por segunda vez");
+    int a = 3;
+    int b = 4;
+
+    int result = a + b;
+
+    Assert.assertEquals(6, result);
 	}
 }
