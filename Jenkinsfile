@@ -15,7 +15,7 @@ pipeline {
             steps {
                 script {
                     dir ('/Users/jaruizf/repos/ejemplo-maven'){
-                        sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=ejemplo-maven-developer -Dsonar.host.url=http://localhost:9000 -Dsonar.login=00215f29feabd178a12b69f16d8b3ce9879a5f26'
+                        sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=ejemplo-maven -Dsonar.host.url=http://localhost:9000 -Dsonar.login=00215f29feabd178a12b69f16d8b3ce9879a5f26'
                     }
                 }
             }
