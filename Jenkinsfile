@@ -11,6 +11,18 @@ pipeline {
                 }
             }
         }
+        stage('Sonar Checks') {
+            steps {
+                script {
+                    dir ('/Users/jaruizf/repos/ejemplo-maven'){
+                    mvn clean verify sonar:sonar \
+                        -Dsonar.projectKey=ejemplo-sonar \
+                        -Dsonar.host.url=http://localhost:9000 \
+                        -Dsonar.login=2b279675b49f672d1c8f636d32b525d37512408c
+                    }
+                }
+            }
+        }
         stage('Test Code') {
             steps {
                 script {
