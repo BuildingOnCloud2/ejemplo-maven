@@ -14,7 +14,7 @@ class DevOpsUsach2020ApplicationTests {
 
     int result = a + b;
 
-    Assert.assertEquals(3, result);
+    //Assert.assertEquals(3, result);
   }
   @Test	
 	void contextLoads2() {
@@ -23,6 +23,6 @@ class DevOpsUsach2020ApplicationTests {
 
     int result = a + b;
 
-    Assert.assertEquals(6, result);
+    //Assert.assertEquals(6, result);
 	}
 }
