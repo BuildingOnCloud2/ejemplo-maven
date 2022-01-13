@@ -11,14 +11,12 @@ pipeline {
                 }
             }
         }
-        node {
           stage('Sonar') {
             def scannerHome = tool 'sonar-scanner';
             withSonarQubeEnv('My SonarQube Server') { 
               sh '${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=ejemplo-maven'
             }
           }
-        }
 //        stage('Sonar') {
 //            steps {
 //                script {
