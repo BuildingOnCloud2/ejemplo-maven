@@ -10,16 +10,22 @@ pipeline {
                     }
                 }
             }
-        }
+        }    
         stage('Sonar') {
-            steps {
-                script {
-                    dir ('/Users/jaruizf/repos/ejemplo-maven'){
-                        sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=ejemplo-maven -Dsonar.host.url=http://localhost:9000 -Dsonar.login=00215f29feabd178a12b69f16d8b3ce9879a5f26'
-                    }
-                }
-            }
+          def scannerHome = tool 'sonar-scanner';
+          withSonarQubeEnv('My SonarQube Server') { 
+            sh '${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=ejemplo-maven'
+          }
         }
+//        stage('Sonar') {
+//            steps {
+//                script {
+//                    dir ('/Users/jaruizf/repos/ejemplo-maven'){
+//                        sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=ejemplo-maven -Dsonar.host.url=http://localhost:9000 -Dsonar.login=00215f29feabd178a12b69f16d8b3ce9879a5f26'
+//                    }
+//                }
+//            }
+//        }
         stage('Test Code') {
             steps {
                 script {
