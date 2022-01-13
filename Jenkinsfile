@@ -16,7 +16,7 @@ pipeline {
             script {
               def scannerHome = tool 'sonar-scanner';
               withSonarQubeEnv('sonar-server') { 
-                sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=ejemplo-maven"
+                sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=ejemplo-maven -Dsonar.projectBaseDir=/Users/jaruizf/repos/ejemplo-maven -Dsonar.sources=src -Dsonar.java.binaries=build"
               }
             }
           }
