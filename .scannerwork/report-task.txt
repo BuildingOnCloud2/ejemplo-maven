@@ -2,5 +2,5 @@ projectKey=ejemplo-maven
 serverUrl=http://localhost:9000
 serverVersion=8.9.6.50800
 dashboardUrl=http://localhost:9000/dashboard?id=ejemplo-maven
-ceTaskId=AX5QvcIcTe48uylqtNEd
-ceTaskUrl=http://localhost:9000/api/ce/task?id=AX5QvcIcTe48uylqtNEd
+ceTaskId=AX5Q-_FnTe48uylqtNEe
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AX5Q-_FnTe48uylqtNEe
