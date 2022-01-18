@@ -21,7 +21,7 @@ pipeline {
         stage('Test Code') {
             steps {
                 script {
-					bat "mvn clean test -e"
+					bat "mvn clean packages -e"
                 }
             }
         }
