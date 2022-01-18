@@ -6,7 +6,6 @@ pipeline {
             steps {
                 script {
 						bat "curl -X GET -u admin:patito_24 http://localhost:8082/repository/test-repo/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1.jar -O"
-                    }
                 }
             }
         }
