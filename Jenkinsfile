@@ -21,11 +21,18 @@ pipeline {
         stage('Test Code') {
             steps {
                 script {
-					bat "mvn clean package -e"
+					bat "mvn clean test -e"
                 }
             }
         }
 		
+		stage('Package') {
+           steps {
+                script {
+                    bat "mvn clean package -e"
+                }
+            }
+        }
 			
         stage('UploadNexus') {
             steps {
