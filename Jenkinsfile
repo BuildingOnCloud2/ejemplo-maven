@@ -5,7 +5,7 @@ pipeline {
         stage('Donwload-Nexus') {
             steps {
                 script {
-						curl -X GET -u admin:patito_24 http://localhost:8081/repository/test-repo/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1.jar -O
+						curl -X GET -u admin:patito_24 http://localhost:8082/repository/test-repo/com/devopsusach2020/DevOpsUsach2020/0.0.1/DevOpsUsach2020-0.0.1.jar -O
                     }
                 }
             }
