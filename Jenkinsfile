@@ -26,13 +26,6 @@ pipeline {
             }
         }
 		
-		stage('Package') {
-            steps {
-                script {
-                    bat "mvn clean package -e"
-                }
-            }
-        }
 			
         stage('UploadNexus') {
             steps {
